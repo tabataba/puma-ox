@@ -1,0 +1,4 @@
+ &RES
+ NLAT = 256
+ NLEV = 20
+ /END

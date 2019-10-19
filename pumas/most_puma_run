@@ -1,0 +1,26 @@
+#!/bin/bash
+
+EXP="PUMAG"
+set +o noclobber
+if [$1 -ne ""]; then cd $1; fi
+
+rm -f puma_restart
+rm -f Abort_Message
+
+YEAR=0
+YEARS=10
+
+while [ $YEAR -lt $YEARS ]
+do
+  let "YEAR=YEAR+1"
+  DATANAME=`printf '%s.%03d' $EXP $YEAR`
+  DIAGNAME=`printf '%s_DIAG.%03d' $EXP $YEAR`
+  RESTNAME=`printf '%s_REST.%03d' $EXP $YEAR`
+  ./puma.x 64 10
+  if [ -f Abort_Message ]; then exit 1; fi
+  if [ -f puma_output ]; then mv puma_output $DATANAME; fi
+  if [ -f puma_diag ];   then mv puma_diag   $DIAGNAME; fi
+  cp -f puma_status puma_restart
+  mv -f puma_status $RESTNAME
+done
+

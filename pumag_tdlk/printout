@@ -1,0 +1,104 @@
+************************************************************************
+*                        burn 7.1 (23-Feb-2011)                        *
+*                Edilbert Kirk - University of Hamburg                 *
+* -------------------------------------------------------------------- *
+*     Usage: burn7 [-help|-c|-d|-m|-n|-s] <modelfile> <resultfile>     *
+*        New: option <-g> writes Grads ctl for service plotting        *
+*            New: comments (#) are allowed in namelist file            *
+************************************************************************
+*          Run started at Thu Sep 19 19:47:12 2013 local time          *
+************************************************************************
+*                 Found PUMA/Planet Simulator data set                 *
+*                   Running on little endian machine                   *
+*                   File is in little endian  format                   *
+*                  Record control words have 32 bits                   *
+*                    Header format: Service 32 bit                     *
+*                                                                      *
+*              Truncation                        =     42              *
+*              Latitudes                         =     64              *
+*              Longitudes                        =    128              *
+*              Sigma Levels                      =     15              *
+*              Single precision data:      Bytes =      4              *
+*                                                                      *
+*              Half Level             [p]         [sigma]              *
+*                     0.0          0.0000          0.0000              *
+*                     1.0          0.0000          0.0127              *
+*                     2.0          0.0000          0.0486              *
+*                     3.0          0.0000          0.1040              *
+*                     4.0          0.0000          0.1754              *
+*                     5.0          0.0000          0.2593              *
+*                     6.0          0.0000          0.3520              *
+*                     7.0          0.0000          0.4501              *
+*                     8.0          0.0000          0.5499              *
+*                     9.0          0.0000          0.6480              *
+*                    10.0          0.0000          0.7407              *
+*                    11.0          0.0000          0.8246              *
+*                    12.0          0.0000          0.8960              *
+*                    13.0          0.0000          0.9514              *
+*                    14.0          0.0000          0.9873              *
+*                    15.0          0.0000          1.0000              *
+************************************************************************
+*       lats =       60                                                *
+*       lons =      120                                                *
+*   cyclical =        0  (default)                                     *
+*      vtype = s                                                       *
+*      htype = g                                                       *
+*      multi =        0  (default)                                     *
+* levelfacto =    1.000  (default)                                     *
+*     netcdf =        1                                                *
+*      head7 =        0  (default)                                     *
+*       mars =        0  (default)                                     *
+*      first =        1  (default)                                     *
+*       last =       12  (default)                                     *
+*     radius = 6371000.000  (default)                                  *
+*       mean =        0                                                *
+*    timesel = all                                                     *
+* -------------------------------------------------------------------- *
+* Code   131 = ua     eastward_wind                                    *
+* Code   132 = va     northward_wind                                   *
+* Code   135 = wap    vertical_air_velocity                            *
+* Code   130 = ta     air_temperature                                  *
+* -------------------------------------------------------------------- *
+* Level    1 =          1                                              *
+* Level    2 =          2                                              *
+* Level    3 =          3                                              *
+* Level    4 =          4                                              *
+* Level    5 =          5                                              *
+* Level    6 =          6                                              *
+* Level    7 =          7                                              *
+* Level    8 =          8                                              *
+* Level    9 =          9                                              *
+* Level   10 =         10                                              *
+* Level   11 =         11                                              *
+* Level   12 =         12                                              *
+* Level   13 =         13                                              *
+* Level   14 =         14                                              *
+* Level   15 =         15                                              *
+* -------------------------------------------------------------------- *
+*  Input File: tdlk1omg-1ps-nvg3.005                                   *
+* Output File: tdlk1omg-1ps-uvwt-ep.nc                                 *
+* -------------------------------------------------------------------- *
+* Vertical   Type = Sigma                [S]                           *
+* Horizontal Type = Grid (Lons x Lats)   [G]                           *
+* -------------------------------------------------------------------- *
+* Processed Month  1   Year    5   Terms  30                           *
+* Processed Month  2   Year    5   Terms  30                           *
+* Processed Month  3   Year    5   Terms  30                           *
+* Processed Month  4   Year    5   Terms  30                           *
+* Processed Month  5   Year    5   Terms  30                           *
+* Processed Month  6   Year    5   Terms  30                           *
+* Processed Month  7   Year    5   Terms  30                           *
+* Processed Month  8   Year    5   Terms  30                           *
+* Processed Month  9   Year    5   Terms  30                           *
+* Processed Month 10   Year    5   Terms  30                           *
+* Processed Month 11   Year    5   Terms  30                           *
+* Processed Month 12   Year    5   Terms  30                           *
+************************************************************************
+*                        Using 360 day calendar                        *
+*                     Data interval =  24.00 hours                     *
+************************************************************************
+* User     time:      8.337 seconds                                    *
+* System   time:      0.606 seconds                                    *
+* Total    time:      8.943 seconds                                    *
+* Page reclaims:       4733 pages                                      *
+************************************************************************

@@ -1,0 +1,26 @@
+ &INP
+ NOUTPUT =1
+ NGUI    =0
+ TAC     =     0.0000
+ PAC     =     0.0000
+ NYEARS  =     1
+ NMONTHS =     0
+ KICK    =     1
+ MPSTEP  =     0
+ NDEL    =     6
+ NDHEAT  =     0
+ NDIAG   =     0
+ NGUIDBG =     0
+ NHELSUA =     0
+ NSYNC   =     0
+ NTSPD   =     120
+ NWPD    =     1
+ DTEP    =    60.0
+ DTNS    =     0.0
+ DTROP   = 12000.0
+ DTTRP   =     2.0
+ EPSYNC  =     0.0
+ ROTSPD  =     1.0
+ TGR     =   288.0
+ TFRC = 0,0,0,0,0,0,0,0,0,1
+ /END

@@ -1,0 +1,40 @@
+# Makefile template for MoSt
+# Compiler names and options are inserted by MoSt
+
+%.o : %.c
+	$(MOST_CC) -c $(MOST_CC_OPTS) $<
+
+%.o : %.f90
+	$(MOST_F90) -c $(MOST_F90_OPTS) $<
+
+# MPIMOD=mpimod     # single (mpimod_stub) or parallel (mpimod)
+# GUIMOD=guimod     # with GUI or without (guimod_stub)
+# PUMAX=pumax       # with GUI module or without (pumax_stub)
+# GUILIB=${MOST_XLIB} -lX11
+# MOST_F90=f90      # name of the FORTRAN compiler
+# MOST_F90_OPTS=-O  # FORTRAN options
+# MOST_CC=cc        # name of the C compiler for GUI
+# MOST_CC_OPTS=-O   # C options
+
+# fftmod is faster than fft991mod, but fft991mod supports
+# more resolutions, e.g. T63 and T106
+
+FFTMOD=fftmod
+
+OBJ=${MPIMOD}.o ${FFTMOD}.o ${GUIMOD}.o ${PUMAX}.o puma.o radmod.o legsym.o restartmod.o gaussmod.o
+
+puma.x:	$(OBJ)
+	$(MOST_F90) -o puma.x $(MOST_F90_OPTS) $(OBJ) ${GUILIB}
+
+puma.o:		puma.f90
+${FFTMOD}.o:	${FFTMOD}.f90
+${GUIMOD}.o:	${GUIMOD}.f90 puma.o
+${MPIMOD}.o:	${MPIMOD}.f90 puma.o
+radmod.o:	radmod.f90 puma.o
+legsym.o:	legsym.f90 puma.o
+gaussmod.o:	gaussmod.f90
+restartmod.o:	restartmod.f90
+${PUMAX}.o:	${PUMAX}.c
+
+clean:
+	rm -f *.o *.mod

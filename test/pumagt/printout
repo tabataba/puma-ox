@@ -1,0 +1,91 @@
+************************************************************************
+*                        burn 7.1 (23-Feb-2011)                        *
+*                Edilbert Kirk - University of Hamburg                 *
+* -------------------------------------------------------------------- *
+*     Usage: burn7 [-help|-c|-d|-m|-n|-s] <modelfile> <resultfile>     *
+*        New: option <-g> writes Grads ctl for service plotting        *
+*            New: comments (#) are allowed in namelist file            *
+************************************************************************
+*          Run started at Fri Dec 27 15:58:48 2013 local time          *
+************************************************************************
+*                 Found PUMA/Planet Simulator data set                 *
+*                   Running on little endian machine                   *
+*                   File is in little endian  format                   *
+*                  Record control words have 32 bits                   *
+*                    Header format: Service 32 bit                     *
+*                                                                      *
+*              Truncation                        =     42              *
+*              Latitudes                         =     64              *
+*              Longitudes                        =    128              *
+*              Sigma Levels                      =     10              *
+*              Single precision data:      Bytes =      4              *
+*                                                                      *
+*              Half Level             [p]         [sigma]              *
+*                     0.0          0.0000          0.0000              *
+*                     1.0          0.0000          0.1000              *
+*                     2.0          0.0000          0.2000              *
+*                     3.0          0.0000          0.3000              *
+*                     4.0          0.0000          0.4000              *
+*                     5.0          0.0000          0.5000              *
+*                     6.0          0.0000          0.6000              *
+*                     7.0          0.0000          0.7000              *
+*                     8.0          0.0000          0.8000              *
+*                     9.0          0.0000          0.9000              *
+*                    10.0          0.0000          1.0000              *
+************************************************************************
+*       lats =       60                                                *
+*       lons =      120                                                *
+*   cyclical =        0  (default)                                     *
+*      vtype = p                                                       *
+*      htype = g                                                       *
+*      multi =        0  (default)                                     *
+* levelfacto =    1.000  (default)                                     *
+*     netcdf =        1                                                *
+*      head7 =        0  (default)                                     *
+*       mars =        0  (default)                                     *
+*      first =        1  (default)                                     *
+*       last =       12  (default)                                     *
+*     radius = 6371000.000  (default)                                  *
+*       mean =        1                                                *
+*    timesel = all                                                     *
+* -------------------------------------------------------------------- *
+* Code   130 = ta     air_temperature                                  *
+* -------------------------------------------------------------------- *
+* Level    1 =      1000.0000 hPa                                      *
+* Level    2 =       900.0000 hPa                                      *
+* Level    3 =       800.0000 hPa                                      *
+* Level    4 =       700.0000 hPa                                      *
+* Level    5 =       600.0000 hPa                                      *
+* Level    6 =       500.0000 hPa                                      *
+* Level    7 =       400.0000 hPa                                      *
+* Level    8 =       300.0000 hPa                                      *
+* Level    9 =       200.0000 hPa                                      *
+* Level   10 =       100.0000 hPa                                      *
+* -------------------------------------------------------------------- *
+*  Input File: gh-ob23-1omg.010                                        *
+* Output File: gh-ob23-1omg-t-mon-mean.nc                              *
+* -------------------------------------------------------------------- *
+* Vertical   Type = Pressure             [P]                           *
+* Horizontal Type = Grid (Lons x Lats)   [G]                           *
+* -------------------------------------------------------------------- *
+* Processed Month  1   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  2   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  3   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  4   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  5   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  6   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  7   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  8   Year   10  (Mean of  30 Terms)                  *
+* Processed Month  9   Year   10  (Mean of  30 Terms)                  *
+* Processed Month 10   Year   10  (Mean of  30 Terms)                  *
+* Processed Month 11   Year   10  (Mean of  30 Terms)                  *
+* Processed Month 12   Year   10  (Mean of  30 Terms)                  *
+************************************************************************
+*                        Using 360 day calendar                        *
+*                     Data interval =  24.00 hours                     *
+************************************************************************
+* User     time:      1.763 seconds                                    *
+* System   time:      0.122 seconds                                    *
+* Total    time:      1.885 seconds                                    *
+* Page reclaims:       3456 pages                                      *
+************************************************************************

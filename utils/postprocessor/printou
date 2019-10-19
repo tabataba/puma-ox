@@ -1,0 +1,84 @@
+************************************************************************
+*                        burn 7.1 (23-Feb-2011)                        *
+*                Edilbert Kirk - University of Hamburg                 *
+* -------------------------------------------------------------------- *
+*     Usage: burn7 [-help|-c|-d|-m|-n|-s] <modelfile> <resultfile>     *
+*        New: option <-g> writes Grads ctl for service plotting        *
+*            New: comments (#) are allowed in namelist file            *
+************************************************************************
+*          Run started at Tue Oct 15 17:38:45 2013 local time          *
+************************************************************************
+*                 Found PUMA/Planet Simulator data set                 *
+*                   Running on little endian machine                   *
+*                   File is in little endian  format                   *
+*                  Record control words have 32 bits                   *
+*                    Header format: Service 32 bit                     *
+*                                                                      *
+*              Truncation                        =     21              *
+*              Latitudes                         =     32              *
+*              Longitudes                        =     64              *
+*              Sigma Levels                      =     10              *
+*              Single precision data:      Bytes =      4              *
+*                                                                      *
+*              Half Level             [p]         [sigma]              *
+*                     0.0          0.0000          0.0000              *
+*                     1.0          0.0000          0.1000              *
+*                     2.0          0.0000          0.2000              *
+*                     3.0          0.0000          0.3000              *
+*                     4.0          0.0000          0.4000              *
+*                     5.0          0.0000          0.5000              *
+*                     6.0          0.0000          0.6000              *
+*                     7.0          0.0000          0.7000              *
+*                     8.0          0.0000          0.8000              *
+*                     9.0          0.0000          0.9000              *
+*                    10.0          0.0000          1.0000              *
+************************************************************************
+*       lats =       32  (default)                                     *
+*       lons =       64  (default)                                     *
+*   cyclical =        0  (default)                                     *
+*      vtype = p                                                       *
+*      htype = g                                                       *
+*      multi =        0  (default)                                     *
+* levelfacto =    1.000  (default)                                     *
+*     netcdf =        1                                                *
+*      head7 =        0  (default)                                     *
+*       mars =        0  (default)                                     *
+*      first =        1  (default)                                     *
+*       last =       12  (default)                                     *
+*     radius = 6371000.000  (default)                                  *
+*       mean =        0                                                *
+*    timesel = all                                                     *
+* -------------------------------------------------------------------- *
+* Code   130 = ta     air_temperature                                  *
+* -------------------------------------------------------------------- *
+* Level    1 =       500.0000 hPa                                      *
+* -------------------------------------------------------------------- *
+*  Input File: MOST.008                                                *
+* Output File: test8.nc                                                *
+* -------------------------------------------------------------------- *
+* Vertical   Type = Pressure             [P]                           *
+* Horizontal Type = Gaussian Grid        [G]                           *
+* -------------------------------------------------------------------- *
+* Processed Month  1   Year    8   Terms  30                           *
+* Processed Month  2   Year    8   Terms  30                           *
+* Processed Month  3   Year    8   Terms  30                           *
+* Processed Month  4   Year    8   Terms  30                           *
+* Processed Month  5   Year    8   Terms  30                           *
+* Processed Month  6   Year    8   Terms  30                           *
+* Processed Month  7   Year    8   Terms  30                           *
+* Processed Month  8   Year    8   Terms  30                           *
+* Processed Month  9   Year    8   Terms  30                           *
+* Processed Month 10   Year    8   Terms  30                           *
+* Processed Month 11   Year    8   Terms  30                           *
+* Processed Month 12   Year    8   Terms  30                           *
+************************************************************************
+*                        Using 360 day calendar                        *
+*                     Data interval =  24.00 hours                     *
+************************************************************************
+* User     time:      0.128 seconds                                    *
+* System   time:      0.008 seconds                                    *
+* Total    time:      0.136 seconds                                    *
+* Memory  usage:      0.007 MBytes                                     *
+* Page reclaims:       1944 pages                                      *
+* Disk    Write:       5792 blocks                                     *
+************************************************************************

@@ -1,0 +1,33 @@
+#!/bin/bash
+##########PBS -S /bin/bash
+
+#SBATCH --time=2:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=16
+########PBS -q consort
+#SBATCH --mail-type ALL --mail-user fachreddin.tabataba-vakili@physics.ox.ac.uk
+#####SBATCH -m bea -M tabataba-vakili@atm.ox.ac.uk 
+######SBATCH -V
+
+
+#module load openmpi/1.6.2__gcc-4.6.3
+module load openmpi/1.8.4__gcc-4.9.2
+#module load openmpi/1.6.1/gcc-4.6.1
+
+####cd /temp/eisox067/issi/1omg-1ps
+#cd /home/eisox126/models/most16.020
+
+#nprocs=`wc -l $PBS_NODEFILE | awk '{ print $1 }'`
+
+#cd $var
+
+#echo $var
+
+#icd $PBS_O_WORKDIR
+
+. enable_arcus-b_mpi.sh
+
+
+
+./most_puma_run_mpi $MPI_HOSTS
+

@@ -1,0 +1,4 @@
+ &RES
+ NLAT = 32
+ NLEV = 10
+ /END
